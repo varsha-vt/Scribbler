@@ -1,0 +1,93 @@
+body{
+    position : relative;
+    bottom:0;
+}
+
+#postTitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn{
+    border-radius: 0;
+    background-color: #ed2553;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 5px 20px rgb(237 37 83 / 40%)
+}
+#editPost{
+    border-radius: 0;
+    background-color: #ed2553;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 5px 20px rgb(237 37 83 / 40%);
+}
+
+.author-wrapper{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+#postContent{
+    word-wrap: break-word;
+    margin-top: 20px;
+    margin: 30px;
+}
+.like-wrapper{
+
+    margin-bottom: 10px;
+    padding: 5px;
+    margin:30px;
+    font-size: small;
+
+}
+
+#likeText{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.heading-content{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#commentsWrapper {
+    background-color: lightgray;
+    padding: 15px 5px;
+    width: 70%;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#commentBox {
+    width: 70%;
+    min-height: 100px;
+}
+
+.comments-wrapper{
+    margin: 30px;
+}
+
+.all-comments-text {
+    font-weight: bold;
+    margin-top: 10px !important;
+    margin-bottom: auto !important;
+}
+
+.edit {
+    outline: 1px solid pink;
+}
+
+#comment {
+    background-color: white;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}

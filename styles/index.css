@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+    height: 100%;
+}

@@ -1,0 +1,37 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title {
+    font-family: 'Montez', cursive;
+    font-size: 30px;
+    color: blue;
+    margin: 0;
+}
+.sub-title {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10;
+    color: black;
+    margin: 0;
+}
+.headerButton {
+    width: 100px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    background: #0000ff;
+    color: #fff;
+    float: right;
+    border-color: white;
+    margin: 0px 0px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

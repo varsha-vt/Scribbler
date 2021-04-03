@@ -3,11 +3,118 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- TODO: Include Google Fonts file here -->
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS files -->
+    <link href='styles/index.css' rel='stylesheet' type='text/css'>
+    <link href='styles/common.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header-section">
+        <div class="title-section">
+            <p class="title">ScriBBler</p>
+            <p class="sub-title">Explore, Imagine, Create</p>
+        </div>
+        <div class="sign-in-out-buttons">
+            <button id="signInBtn" class="headerButton" type="button">Sign In</button>
+            <button id="signUpBtn" class="headerButton" type="button">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="postSections">
+        <button id = "allPosts" onclick="location.href='./html/bloglist.html'" class="postButtons" type="button">All Posts</button>
+        <button id="createPost" class="postButtons" type="button">Create Post</button>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-heading">Get Started</h3>
+                <span class="close-icon" id="closeSignUp"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="signupusername" placeholder="Enter your username" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="signuppassword">Password</label>
+                        <input type="password" class="form-control" id="signuppassword" placeholder="Enter your password" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmpassword" placeholder="Re-enter your password" required="true" />
+                    </div>
+                    <button type="submit" class="btn btn-block btn-success">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-heading">Welcome Back!</h3>
+                <span class="close-icon" id="closeSignIn"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required="true" />
+                    </div>
+                    <button type="submit" class="btn btn-block btn-success">Sign In</button>
+                    <p class="not-member">Not a member? <span id="signUpLink">Sign Up</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="createPostModal" class="modal">
+        <div class="modal-post-content">
+            <div class="modal-header">
+                <h3 class="modal-heading">Pen Your Post</h3>
+                <span id="closeCreatePost" class="close-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter title of your post" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="contents">Contents</label>
+                        <textarea type="text" class="form-control contents" id="contents" rows="10" placeholder="Enter the contents of your post" required="true" ></textarea>
+                    </div>
+                    <div class="create-btn-div">
+                        <button type="submit" class="btn btn-success" id="createPostApi">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+
 </body>
 
 </html>

@@ -89,19 +89,22 @@
 
         <div class="posts-wrapper">
             <p class="post-title" id="postTitle"></p>
+
             <div class="author-wrapper">
                 <span id="author"></span>
-                <button class="btn btn-danger saved btn-common" id="editPost">Edit <i class="fa fa-edit"></i></button>
+                <button class="btn btn-danger saved btn-common" id="editPost" contenteditable="false" onclick="editPost()">Edit <i class="fa fa-edit"></i></button>
             </div>
+
             <p class="post-content" id="postContent"></p>
+
             <div class="like-wrapper">
-                <button class="btn btn-danger like-button btn-common"><i class="fa fa-thumbs-up"></i>Like</button>
+                <button class="btn btn-danger btn-common " id="likeButton" onclick='likeBtnCount()'><i class="fa fa-thumbs-up"></i>Like</button>
                 <p id="likeText">Be the first one to like this!</p>
             </div>
             <div class="comments-wrapper">
                 <textarea name="comments" id="commentBox" placeholder="Leave a comment..." required></textarea>
                 <br>
-                <button class="btn btn-danger comment-button btn-common">Comment</button>
+                <button class="btn btn-danger btn-common" id="commentButton" onclick='addComment()'>Comment</button>
                 <p class="all-comments-text">All Comments</p>
                 <div id="commentsWrapper"></div>
             </div>

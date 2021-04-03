@@ -33,3 +33,44 @@ body {
     width: 120px;
     margin-right: 10px;
 }
+
+textarea {
+    margin-top: 10px;
+    background-color: #f1f1f1 !important;
+}
+
+#createPostModal .modal-content {
+    width: 85%;
+    margin: 4% auto;
+}
+
+#createPostModal .modal-content .contents {
+    min-height: 250px;
+}
+
+#createPostModal .modal-content .create-btn-div {
+    text-align: center;
+}
+
+#createPostModal .modal-content .create-btn-div .btn {
+    padding: 5px 25px;
+    border-radius: 0;
+}
+
+input {
+    background-color: #f1f1f1 !important;
+}
+
+.btn-success {
+    margin-top: 30px;
+}
+
+.modal-post-content {
+    top:20px;
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 0;
+}

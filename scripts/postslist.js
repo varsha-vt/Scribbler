@@ -31,3 +31,16 @@ window.addEventListener("click", function(event) {
         deletePost.style.display = "none";
     }
 });
+
+
+function viewPost(author, title, content){
+
+    authorText = document.getElementById(author).innerText;
+    titleText = document.getElementById(title).innerText;
+    contentText = document.getElementById(content).innerText;
+
+    sessionStorage.setItem("author", authorText);
+    sessionStorage.setItem("title", titleText);
+    sessionStorage.setItem("content", contentText);
+    window.location.href = "../html/post.html";
+}

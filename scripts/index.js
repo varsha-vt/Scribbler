@@ -1,7 +1,6 @@
-
+//Basic structure of a modal taken from example https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal
 var createPostModal = document.getElementById("createPostModal");
-
 
 // Get the button that opens the modal
 var createPostBtn  = document.getElementById("createPost");

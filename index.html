@@ -22,6 +22,7 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <!--Header section that is common to all pages-->
     <div class="header-section">
         <div class="title-section">
             <p class="title">ScriBBler</p>
@@ -33,6 +34,7 @@
         </div>
     </div>
 
+    <!--Sign up modal common to all pages-->
     <div id="signUpModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -63,6 +65,7 @@
         </div>
     </div>
 
+    <!--Sign in modal common to all pages-->
     <div id="signInModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -86,11 +89,13 @@
         </div>
     </div>
 
+    <!--Adding buttons for create post and all posts-->
     <div class="postSections">
         <button id = "allPosts" onclick="location.href='./html/postslist.html'" class="postButtons" type="button">All Posts</button>
         <button id="createPost" class="postButtons" type="button">Create Post</button>
     </div>
 
+    <!--The modal for creating post-->
     <div id="createPostModal" class="modal">
         <div class="modal-post-content">
             <div class="modal-header">
@@ -115,7 +120,7 @@
         </div>
     </div>
 
-
+    <!--Script files being referenced-->
     <script src="scripts/common.js"></script>
     <script src="scripts/index.js"></script>
 

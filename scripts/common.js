@@ -1,4 +1,4 @@
-
+//Basic structure of a modal taken from example https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal
 var signUpModal = document.getElementById("signUpModal");
 var signInModal = document.getElementById("signInModal");
@@ -45,7 +45,7 @@ window.addEventListener("click", function(event) {
     }
 });
 
-
+//functionality for the signup link
 signUpLink.onclick = function() {
     closeModel(signInModal);
     openModel(signUpModal);

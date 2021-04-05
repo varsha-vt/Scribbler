@@ -1,4 +1,4 @@
-
+//Basic structure of a modal taken from example https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal
 var createPostModal = document.getElementById("createPostModal");
 

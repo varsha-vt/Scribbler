@@ -5,9 +5,7 @@ var confirmDelete = document.getElementById("confirm");
 
 
 function deleteModal(post){
-    console.log("Entering delete model method");
     openModel(deletePost);
-    console.log("Delete model opened")
     deletePost.addEventListener("click",function(event){
         if(event.target == cancelDelete ){
             console.log("cancel detected");

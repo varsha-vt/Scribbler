@@ -2,7 +2,6 @@
 // Get the modal
 var createPostModal = document.getElementById("createPostModal");
 
-
 // Get the button that opens the modal
 var createPostBtn  = document.getElementById("createPost");
 
